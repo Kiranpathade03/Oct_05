@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="buttonover">Click Here</button>
+    <button id="buttonout">Click Here</button>
+    <button id="buttonup">Click Here</button>
+    <button id="buttondown">Click Here</button>
+    <script>
+        var buttonover = document.getElementById('buttonover');
+        buttonover.addEventListener('mouseover', function() {
+            buttonover.textContent = "Mouse Over"
+        })
+        var buttonout = document.getElementById('buttonout');
+        buttonout.addEventListener('mouseout', function() {
+            buttonout.textContent = "Mouse Out"
+        })
+        var buttonup = document.getElementById('buttonup');
+        buttonup.addEventListener('mouseup', function() {
+            buttonup.textContent = "Mouse Up"
+        })
+        var buttondown = document.getElementById('buttondown');
+        buttondown.addEventListener('mousedown', function() {
+            buttondown.textContent = "Mouse Down"
+        })
+    </script>
+
+</body>
+
+</html>
